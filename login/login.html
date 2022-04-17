@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="53736697490-0tvli2ovkhkbkhde3611vp8bdj9ia8i9.apps.googleusercontent.com">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Login</title>
+</head>
+<body class="bg-veryLightGray">
+    <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <div class="pt-2">
+                <img src="img/testlogo.png" alt=""/>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="../index.html" class="hover:text-gray-300">Home</a>
+                <a href="../schedule.html" class="hover:text-gray-300">Scheduler</a>
+                <a href="../aboutus.html" class="hover:text-gray-300">About Us</a>
+            </div>
+            <!--button-->
+            <a href="../login/login.html" class="hidden md:flex p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-orange-500 font-bold">
+                Log In / Sign Up
+            </a>
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-mid"></span>
+                <span class="hamburger-bot"></span>
+            </button>
+        </div>
+        <section id="hero">
+            <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0">
+                <div class="flex flex-col mb-10 space-y-5">
+                    <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl content-center">
+                        Log In / Sign Up (via Google Sign In)
+                    </h1>
+                </div>
+            </div>
+        </section>
+        
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gray-100 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="../index.html" class="hover:text-gray-300">Home</a>
+                <a href="../schedule.html" class="hover:text-gray-300">Scheduler</a>
+                <a href="../aboutus.html" class="hover:text-gray-300">About Us</a>
+                <a href="../login/login.html" class="text-red-500 hover:text-gray-300">Log In / Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-200 p-6 flex flex-row content-center items-center m-auto">
+        <div class="g-signin2" data-theme="filled_blue" data-onsuccess="onSignIn">L</div>
+    </div>
+    
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>    
+<script src="./js/login.js" type="module"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
