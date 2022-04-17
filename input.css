@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger{
+    cursor:pointer;
+    width:24px;
+    height:24px;
+    transition:all 0.25s;
+    position:relative;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bot {
+    position:absolute;
+    top:0;
+    left:0;
+    width:24px;
+    height:2px;
+    background:#000;
+    transform:rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-mid {
+    transform:translateY(7px);
+}
+
+.hamburger-bot {
+    transform:translateY(14px);
+}
+
+.open{
+    transform:rotate(90deg);
+    transform:translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px)
+}
+
+.open .hamburger-mid{
+    display:none;
+}
+
+.open .hamburger-bot{
+    transform: rotate(-45deg) translateY(6px) translate(-6px)
+}
+
+  
+  .timer {
+    display: inline-block;
+    padding: 20px 24px;
+    border-radius: 30px;
+    background: rgb(200, 195, 195);
+    position:fixed;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top:20px;
+  }
+  
+  .timer__part {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .timer__btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: #e67008;
+    cursor: pointer;
+  }
+  
+  .timer__btn--start {
+    background: #00b84c;
+  }
+  
+  .timer__btn--stop {
+    background: #ff0256;
+  }
+
+  
